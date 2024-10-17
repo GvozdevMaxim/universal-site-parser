@@ -8,7 +8,8 @@ from utils import LinksChecker, GetNewsTitle, GetNewsContent, NewsDateTime, GetN
 
 site_links = dbconnection.execute_site_links_from_table(db_name='resource', cell='resource_url')
 
-def parcer():
+def parser():
+
 
     for site in site_links:
         print(site[0])
@@ -38,6 +39,7 @@ def parcer():
 
             except:
                 print('Can not find site_id')
+
             link = a
             print(f'2.LINK = {link}')
 
@@ -90,4 +92,4 @@ def parcer():
         lst_news.clear()
 
 if __name__ == "__main__":
-    parcer()
+    parser()
