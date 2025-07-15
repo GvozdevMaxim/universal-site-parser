@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.log
+
+# Env files (переменные окружения)
+.env
+.env.*
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# PyCharm
+.idea/
+*.iml
+
+# MySQL volumes / dumps / временные SQL
+db_data/
+*.sql
+*.sql~
+*.dump
+*.bak
+
+# Docker
+*.pid
+*.pid.lock
+docker-compose.override.yml
+
+# Logs
+*.log
+*.out
+
+.DS_Store
+Thumbs.db
+
+# Pytest / coverage
+.cache/
+*.cover
+coverage.xml
+**/migrations/__pycache__/
+**/migrations/*.pyc
+**/migrations/*.pyo
+**/migrations/*.pyd
+*.xlsx
+*.csv
